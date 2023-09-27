@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script src="script.js" defer></script>
     <title>API</title>
 </head>
@@ -15,10 +16,29 @@
             <div class="form-input-container">
                 <input type="text" placeholder="Digite o nome da cidade" id="city-input">
                 <button id="search">
-                    
+                    <i class="bi bi-search"></i>
                 </button>
             </div><!--Form-Input-Container-->
         </div><!--Form-->
+
+        <div id="wather-data">
+            <h2>
+                <i class="bi bi-geo-alt-fill"></i>
+                <span id="city">Maceió</span>
+                <img src="https://flagsapi.com/BE/flat/64.png" alt="Bandeira do País" id="country">
+            </h2>
+            <p id="temperature"><span>38</span>&deg;C</p>
+            <div id="description-container">
+                <p id="description">Nublado</p>
+                <img src="http://openweathermap.org/img/wn/01d.png" alt="Condições do tempo" id="weather-icon">
+            </div><!--Description-Container-->
+
+            <div id="details-container">
+                <p id="umidity"><i class="bi bi-droplet-fill"></i><span>48%</span></p>
+                <p id="wind"><i class="bi bi-wind"></i><span>3km/h</span></p>
+            </div><!--Details-Container-->
+
+        </div><!--Wather-data-->
     </div><!--Container-->
 
 </body>
