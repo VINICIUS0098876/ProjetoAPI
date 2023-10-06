@@ -1,5 +1,6 @@
 'use strict'
 const cepInput = document.getElementById('cep')
+const apiUnsplash = "https://source.unsplash.com/1600x900/?"
 
 async function pegarCep(cep) {
     const url = `https://viacep.com.br/ws/${cep}/json/`
@@ -8,7 +9,7 @@ async function pegarCep(cep) {
     return cepInfo
 }
 
-async function preencherCampos() {
+async function preencherCampos(cep) {
     const endereco=document.getElementById('endereco')
     const bairro=document.getElementById('bairro')
     const cidade=document.getElementById('cidade')
@@ -18,6 +19,7 @@ async function preencherCampos() {
     bairro.value=cepInfo.bairro
     cidade.value=cepInfo.localidade
     estado.value=cepInfo.uf
+    document.body.style.backgroundImage = `url("${apiUnsplash + cepInfo.localidade}")`;
     console.log(cepInfo)
 }
 

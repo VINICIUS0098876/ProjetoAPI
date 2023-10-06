@@ -10,6 +10,9 @@
 body{
     min-height: 100vh;
     background: linear-gradient(180deg, #000 0% , #19376D 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header{
