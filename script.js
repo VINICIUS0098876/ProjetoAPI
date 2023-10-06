@@ -1,5 +1,4 @@
-
-
+'use strict'
 // Variaveis
 const apiKey = "b8acdb2aa09b772cb44953e7e9eb6b2a"
 const apiCountryURL = "https://countryflagsapi.com/png/"

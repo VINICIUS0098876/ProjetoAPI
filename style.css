@@ -8,7 +8,7 @@
 }
 
 body{
-    background: linear-gradient(180deg, rgba(89, 76, 238, 1) 0% , #8dd0f5 100%);
+    background: linear-gradient(180deg, #000 0% , #19376D 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,9 @@ body{
     box-shadow: rgb(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 2rem;
      color: #576CBC;
-     border-radius: 1rem;
+     border-top-left-radius: 1rem;
+     border-bottom-left-radius: 1rem;
+
 }
 
 /* Formulario */
@@ -126,3 +128,40 @@ body{
     margin: 0.6rem;
     padding: 0.6rem;
 }
+
+/* footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 155px;
+    width: 100px;
+    margin-left: 20px;
+    background-color: aliceblue;
+} */
+
+footer button{
+    
+    height: 155px;
+    width: 155px;
+    margin-left: 10px;
+    background-color: #0B2447;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+footer button a{
+    text-decoration: none;
+    color: #576CBC;
+    transition: 0.5s;
+    display: block;
+}
+
+footer button a:hover{
+    color: #A5D7E8;
+    transform: scale(1.1)
+}
+
