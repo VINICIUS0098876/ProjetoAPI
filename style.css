@@ -8,13 +8,32 @@
 }
 
 body{
-    background: linear-gradient(180deg, #000 0% , #19376D 100%);
+    /* background: linear-gradient(180deg, #000 0% , #19376D 100%); */
+    background-image: url(./img/ceu.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-position: center;
   background-size: cover;
+}
+
+.fundo{
+    z-index: -2;
+    opacity: .5;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100vw;
+}
+
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
 }
 
 .hide{
@@ -164,6 +183,17 @@ footer button a{
 footer button a:hover{
     color: #A5D7E8;
     transform: scale(1.1)
+}
+
+.page-enter {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Para a página de saída */
+.page-exit {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 

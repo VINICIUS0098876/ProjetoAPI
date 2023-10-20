@@ -20,16 +20,16 @@ const weatherContainer = document.querySelector('#wather-data')
 // Funções 
 async function getWeatherData(city){
     const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`
-
+    
     const res =  await fetch(apiWeatherURL)
     const data = await res.json()
-
     return data
+    
 }
 
- async function showWeatherData(city){
+async function showWeatherData(city){
     const data = await getWeatherData(city)
-
+    
     cityElement.innerText = data.name
     tempElement.innerText = parseInt(data.main.temp)
     descElement.innerText = data.weather[0].description
@@ -37,27 +37,39 @@ async function getWeatherData(city){
     countryElement.setAttribute('src', apiCountryURL + data.sys.country)
     humidityElement.innerText = `${data.main.humidity}%`
     windElement.innerText = `${data.wind.speed}km/h`
-
+    
     weatherContainer.classList.remove('hide')
-
+    
     document.body.style.backgroundImage = `url("${apiUnsplash + city}")`;
-
+    
+    
 }
+
 
 // Eventos
 
 searchBtn.addEventListener('click', (e) =>{
     e.preventDefault()
-
+    
     const city = cityInput.value
 
+    if(city === ''){
+        alert('DIGITE UM VALOR VÁLIDO!!')
+    }
+    
     showWeatherData(city)
 })
 
 cityInput.addEventListener('keyup', function(e){
     if(e.code === 'Enter'){
         const city = e.target.value
-
+        
+        if(city === ''){
+            alert('DIGITE UM VALOR VÁLIDO!!')
+        }
         showWeatherData(city)
     }
 })
+    
+
+
