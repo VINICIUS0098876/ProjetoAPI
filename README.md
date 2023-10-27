@@ -1,2 +1,2 @@
 # WHEATER AND CLIMATE
-[PREVIEW](C:\Users\23111829\Documents\CapturaDosDois.PNG)
+[PREVIEW](./img/CapturaDosDois.PNG)
