@@ -60,8 +60,9 @@ main{
 
 
 .navbar ul {
+    font-weight: 600;
     display: flex;
-    gap: 30px;
+    gap: 60px;
     font-size: 1.7rem;
     
 }
@@ -70,6 +71,7 @@ main{
     color: #576CBC;
     display: block;
     transition: 0.5s;
+    /* font-size: 1.1rem; */
     
 }
 
@@ -87,22 +89,22 @@ main{
    flex-direction: column; 
     height: 400px;
     width: 400px;
-    width: 600px;
-    height: 650px;
+    width: 500px;
+    height: 450px;
     background-color: #19376D;
     border-radius: 30px;
     box-shadow: 0px 2px 5px #000;
 }
 
 .itens label{
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: #576CBC;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .itens input{
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 5px;
     background-color: #0B2447;
     border: 3px solid #576CBC;
@@ -112,7 +114,7 @@ main{
 
 ::placeholder{
     padding-left: 5px;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     color: #A5D7E8;
     padding-left: 10px;
 }
@@ -164,8 +166,27 @@ footer span a:hover{
     .navbar ul{
         font-size: 15px;
     }
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        color: #576CBC;
+        background-color: #19376D;
+        box-shadow: 0px 1px 15px #000;
+        align-items: center;
+    }
     header h1{
         font-size: 20px;
+    }
+    header h1 span{
+        font-size: 1.4rem;
+    }
+    .navbar ul {
+        display: flex;
+        gap: 25px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        
     }
     
     footer{
